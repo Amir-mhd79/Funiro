@@ -1,0 +1,103 @@
+body {
+  > .wrapper {
+    > .location {
+      height: 316px;
+      margin-bottom: 100px;
+    }
+    > .contactUs {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0 auto;
+      > .topContact {
+        width: 644px;
+        text-align: center;
+        > .topContactTitle {
+          font-size: 36px;
+          text-transform: capitalize;
+          font-family: urbanistBold;
+          margin-bottom: 8px;
+        }
+        > .topContactBody {
+          color: var(--text-color10);
+          font-family: urbanistRegular;
+        }
+      }
+      > .bottomContact {
+        margin: 100px 0 60px 0;
+        display: flex;
+        column-gap: 80px;
+        > .leftContact {
+          display: flex;
+          flex-direction: column;
+          row-gap: 42px;
+          > .contactDetail {
+            display: flex;
+            column-gap: 30px;
+            > .rightContactDetail {
+              > .title {
+                font-size: 24px;
+                font-family: urbanistRegular;
+                text-transform: capitalize;
+              }
+              > .aboutTitle {
+                width: 220px;
+                font-size: 16px;
+                font-family: urbanistRegular;
+                line-height: 1.5;
+              }
+            }
+          }
+        }
+        > .rightContact {
+          > .contactform {
+            > .input {
+              display: flex;
+              flex-direction: column;
+              row-gap: 10px;
+              margin-bottom: 36px;
+              > .inputlabel {
+                text-transform: capitalize;
+                font-size: 16px;
+                font-family: publicaSans;
+              }
+              > .inputAbout {
+                width: 300px;
+                height: 50px;
+                padding: 0 20px;
+                border-radius: 10px;
+                font-size: 18px;
+                border: 2px solid var(--text-color10);
+                &::placeholder {
+                  color: var(--text-color10);
+                }
+              }
+              > .commentSet {
+                resize: vertical;
+                padding: 20px;
+                height: 150px;
+              }
+            }
+            > .submitSet {
+              width: 237px;
+              height: 55px;
+              color: white;
+              background-color: var(--text-color3);
+              border: unset;
+              border-radius: 10px;
+              text-transform: capitalize;
+              font-size: 18px;
+              font-family: "Times New Roman", Times, serif;
+              cursor: pointer;
+              transition: 300ms;
+              &:hover {
+                background-color: var(--text-color4);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

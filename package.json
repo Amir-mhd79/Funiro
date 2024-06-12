@@ -1,0 +1,39 @@
+{
+  "name": "furniro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "home-2xl": "node-sass -w scss/home/01-2xl/2xl.scss -o css/home/sizes/ -r --output-style compressed",
+    "home-xl": "node-sass -w scss/home/02-xl/xl.scss -o css/home/sizes/ -r --output-style compressed",
+    "home-lg": "node-sass -w scss/home/03-lg/lg.scss -o css/home/sizes/ -r --output-style compressed",
+    "home-md": "node-sass -w scss/home/04-md/md.scss -o css/home/sizes/ -r --output-style compressed",
+    "home-sm": "node-sass -w scss/home/05-sm/sm.scss -o css/home/sizes/ -r --output-style compressed",
+    "home-xs": "node-sass -w scss/home/06-xs/xs.scss -o css/home/sizes/ -r --output-style compressed",
+    "shop-2xl": "node-sass -w scss/shop/01-2xl/2xl.scss -o css/shop/sizes/ -r --output-style compressed",
+    "shop-xl": "node-sass -w scss/shop/02-xl/xl.scss -o css/shop/sizes/ -r --output-style compressed",
+    "shop-lg": "node-sass -w scss/shop/03-lg/lg.scss -o css/shop/sizes/ -r --output-style compressed",
+    "shop-md": "node-sass -w scss/shop/04-md/md.scss -o css/shop/sizes/ -r --output-style compressed",
+    "shop-sm": "node-sass -w scss/shop/05-sm/sm.scss -o css/shop/sizes/ -r --output-style compressed",
+    "shop-xs": "node-sass -w scss/shop/06-xs/xs.scss -o css/shop/sizes/ -r --output-style compressed",
+    "blog-2xl": "node-sass -w scss/blog/01-2xl/2xl.scss -o css/blog/sizes/ -r --output-style compressed",
+    "blog-xl": "node-sass -w scss/blog/02-xl/xl.scss -o css/blog/sizes/ -r --output-style compressed",
+    "blog-lg": "node-sass -w scss/blog/03-lg/lg.scss -o css/blog/sizes/ -r --output-style compressed",
+    "blog-md": "node-sass -w scss/blog/04-md/md.scss -o css/blog/sizes/ -r --output-style compressed",
+    "blog-sm": "node-sass -w scss/blog/05-sm/sm.scss -o css/blog/sizes/ -r --output-style compressed",
+    "blog-xs": "node-sass -w scss/blog/06-xs/xs.scss -o css/blog/sizes/ -r --output-style compressed",
+    "contact-2xl": "node-sass -w scss/contact/01-2xl/2xl.scss -o css/contact/sizes/ -r --output-style compressed",
+    "contact-xl": "node-sass -w scss/contact/02-xl/xl.scss -o css/contact/sizes/ -r --output-style compressed",
+    "contact-lg": "node-sass -w scss/contact/03-lg/lg.scss -o css/contact/sizes/ -r --output-style compressed",
+    "contact-md": "node-sass -w scss/contact/04-md/md.scss -o css/contact/sizes/ -r --output-style compressed",
+    "contact-sm": "node-sass -w scss/contact/05-sm/sm.scss -o css/contact/sizes/ -r --output-style compressed",
+    "contact-xs": "node-sass -w scss/contact/06-xs/xs.scss -o css/contact/sizes/ -r --output-style compressed",
+    "set": "node-sass -w scss/setting.scss -o css/ -r --output-style compressed"
+  },
+  "author": "Amirmohammad Akbarloo",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^9.0.0",
+    "swiper": "^11.1.4"
+  }
+}

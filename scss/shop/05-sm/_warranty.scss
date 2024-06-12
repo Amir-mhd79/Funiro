@@ -1,0 +1,44 @@
+body {
+  > .wrapper {
+    >.warranty{
+        width: 100%;
+        height: 400px;
+        background-color: var(--background-color8);
+        display: flex;
+        justify-content: center;
+        >.benefits{
+            width: inherit;
+            height: inherit;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+            >.benefit{
+                width: 250px;
+                display: flex;
+                justify-content: space-between;
+                column-gap: 10px;
+                >.icon{
+                    display: flex;
+                }
+                >.aboutBenefit{
+                    width: 180px;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    text-transform: capitalize;
+                    font-family: publicaSans;
+                    >.titleBenefit{
+                        font-size: 18px;
+                    }
+                    >.bodyBenefit{
+                        color: var(--text-color6);
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+    }
+  }
+}

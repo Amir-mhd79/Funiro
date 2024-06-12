@@ -1,0 +1,78 @@
+body {
+  > .wrapper {
+    > .setup {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      height: 780px;
+      margin: 67px 0 50px 0;
+      overflow: hidden;
+      > .topShare {
+        width: inherit;
+        height: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        > .shareWith {
+          font-size: 20px;
+          font-family: publicaSans;
+          color: var(--text-color9);
+        }
+        > .furnitureLink {
+          > .furniture {
+            font-size: 40px;
+            font-family: urbanistBold;
+            color: var(--text-color8);
+          }
+        }
+      }
+      > .bottomShare {
+        width: 992px;
+        height: calc(100% - 90px);
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 60px);
+        grid-template-rows: repeat(auto-fill, 60px);
+        gap: 16px;
+        @mixin backSet($rowStart, $rowSpan, $columnStart, $columnSpan, $Url) {
+          grid-row: $rowStart / span $rowSpan;
+          grid-column: $columnStart / span $columnSpan;
+          background-image: $Url;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+        > .Rectangle1 {
+          @include backSet(1, 4, 1, 1, url(../../../images/Rectangle1.png));
+        }
+        > .Rectangle2 {
+          @include backSet(2, 3, 2, 4, url(../../../images/Rectangle2.png));
+        }
+        > .Rectangle3 {
+          @include backSet(3, 4, 6, 3, url(../../../images/Rectangle3.png));
+        }
+        > .Rectangle4 {
+          @include backSet(2, 4, 9, 3, url(../../../images/Rectangle4.png));
+          background-size: cover;
+        }
+        > .Rectangle5 {
+          @include backSet(1, 4, 12, 3, url(../../../images/Rectangle5.png));
+        }
+        > .Rectangle6 {
+          @include backSet(5, 4, 1, 2, url(../../../images/Rectangle6.png));
+        }
+        > .Rectangle7 {
+          @include backSet(5, 3, 3, 3, url(../../../images/Rectangle7.png));
+          background-size: contain;
+        }
+        > .Rectangle8 {
+          @include backSet(6, 3, 9, 2, url(../../../images/Rectangle8.png));
+          background-size: cover;
+        }
+        > .Rectangle9 {
+          @include backSet(6, 2, 11, 3, url(../../../images/Rectangle9.png));
+          background-position: bottom;
+        }
+      }
+    }
+  }
+}

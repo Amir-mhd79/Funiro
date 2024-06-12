@@ -1,0 +1,106 @@
+body {
+  > .wrapper {
+    > .location {
+      width: 100%;
+      margin-bottom: 45px;
+      > .locationShop {
+        background-image: url(../../../images/shop-background.png);
+        width: 100%;
+        height: 316px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        >.logo{
+          margin-bottom: 10px;
+        }
+        > .shopHeading {
+          text-transform: capitalize;
+          font-family: publicaSans;
+          font-weight: bold;
+        }
+        > .shopBody {
+          text-transform: capitalize;
+          display: flex;
+          align-items: center;
+          column-gap: 10px;
+          margin-top: 10px;
+          > .homeLink {
+            color: var(--text-color1);
+            font-family: urbanistBold;
+          }
+          > .fa-angle-right {
+            font-weight: bold;
+            font-size: 20px;
+          }
+          > .shopText {
+            font-family: urbanistRegular;
+          }
+        }
+      }
+      > .filter {
+        width: inherit;
+        height: 150px;
+        background-color: var(--background-color7);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 30px;
+        >.filterWraper{
+          height: inherit;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          > .leftFilter {
+            display: flex;
+            align-items: center;
+            > .svgs {
+              display: flex;
+              column-gap: 10px;
+              border-right: 2px solid var(--text-color10);
+              padding-right: 20px;
+              > svg {
+                cursor: pointer;
+              }
+              > .filterText {
+                text-transform: capitalize;
+                font-family: publicaSans;
+              }
+            }
+            > .results {
+              font-family: publicaSans;
+              margin-left: 20px;
+              font-size: 14px;
+            }
+          }
+          > .rightFilter {
+            display: flex;
+            align-items: center;
+            column-gap: 10px;
+            justify-content: center;
+            > .howMany,
+            .sortBy {
+              text-transform: capitalize;
+              font-family: publicaSans;
+              font-size: 14px;
+              > #howMany {
+                width: 50px;
+                height: 50px;
+                border: unset;
+                cursor: pointer;
+              }
+              > #sortBy {
+                height: 50px;
+                border: unset;
+                text-transform: capitalize;
+                cursor: pointer;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

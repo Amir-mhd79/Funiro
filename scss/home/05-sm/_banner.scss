@@ -1,0 +1,65 @@
+body {
+  > .wrapper {
+    width: 100%;
+    > .banner {
+      width: inherit;
+      height: 700px;
+      background-image: url(../../../images/scandinavian-interior-mockup-wall-decal-sm.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: bottom;
+      position: relative;
+      > .discover {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 350px;
+        height: 320px;
+        background-color: var(--background-color2);
+        border-radius: 10px;
+        position: absolute;
+        right: 8%;
+        top: 5%;
+        backdrop-filter: blur(5px);
+        > .containDiscover {
+          margin: 32px 30px;
+          > .arrival {
+            font-family: monospace;
+            font-weight: bold;
+            font-size: 14px;
+            text-transform: capitalize;
+          }
+          > .collectionHead {
+            font-family: publicaSans;
+            font-weight: bold;
+            font-size: 32px;
+            text-transform: capitalize;
+            color: var(--text-color3);
+          }
+          > .collectionBody {
+            font-family: urbanistRegular;
+            font-weight: bold;
+            font-size: 14px;
+            margin: 20px 0 30px 0;
+          }
+          > .buyNow {
+            width: 160px;
+            height: 50px;
+            font-size: 18px;
+            background-color: var(--text-color3);
+            color: white;
+            border: none;
+            text-transform: uppercase;
+            font-family: urbanistBold;
+            border-radius: 10px;
+            transition: 300ms;
+            cursor: pointer;
+            &:hover {
+              background-color: var(--text-color4);
+            }
+          }
+        }
+      }
+    }
+  }
+}
